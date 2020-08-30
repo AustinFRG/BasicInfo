@@ -1,0 +1,20 @@
+prefix: "&7[&9BasicInfo&7] "
+
+websitelink: "http://site.hypermcn.com/"
+forumslink: "http://site.hypermcn.com/forum/"
+discordlink: "https://discord.gg/qdRAXEV"
+storelink: "http://store.hypermcn.com/"
+applicationlink: "http://site.hypermcn.com/forum/view/6-helper-application/"
+appeallink: "http://site.hypermcn.com/forum/view/11-punishment-appeals/"
+
+helpcommand:
+  - "&9+--------------&b BasicInfo &9--------------+\n"
+  - "&2/basicinfo -&a Sends this message.\n"
+  - "&2/basicreload -&a Reloads the BasicInfo config.\n"
+  - "&2/website -&a Links you to the server's website.\n"
+  - "&2/forums -&a Links you to the server's forums.\n"
+  - "&2/discord -&a Links you to the server's Discord.\n"
+  - "&2/store -&a Links you to the server's store.\n"
+  - "&2/apply -&a Links you to the server's staff applications.\n"
+  - "&2/appeal -&a Links you to the server's punishment appeals.\n"
+  - "&9+-------------------------------------+"
