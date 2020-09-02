@@ -5,6 +5,9 @@ api-version: 1.15
 authors: [AustinFRG]
 description: A basic plugin that gives your players all the information they need.
 commands:
+  info:
+    description: Shows a GUI with all server links.
+    aliases: [serverinfo]
   website:
     description: Sends the server website link.
     aliases: [site]
