@@ -1,10 +1,7 @@
 package me.austinfrg.basicinfo;
 
 import me.austinfrg.basicinfo.Commands.*;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.inventory.InventoryClickEvent;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
@@ -29,17 +26,5 @@ public class BasicInfo extends JavaPlugin implements Listener {
     }
 
     public void onDisable() {
-    }
-
-    @EventHandler
-    public void onInventoryClickEvent(InventoryClickEvent event) {
-        Inventory inv = event.getClickedInventory();
-        if (inv == null) {
-            return;
-        }
-        String name = Objects.requireNonNull(inv).getType().name();
-        if (Objects.equals(name, this.getConfig().getString("guiname"))) {
-            event.setCancelled(true);
-        }
     }
 }

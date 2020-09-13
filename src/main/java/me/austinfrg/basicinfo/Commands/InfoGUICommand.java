@@ -7,7 +7,9 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -80,5 +82,16 @@ public class InfoGUICommand implements CommandExecutor, Listener {
         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(plugin.getConfig().getString("prefix"))) + ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(plugin.getConfig().getString("appeallink"))));
         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&9+-------------------------------------+"));
         return true;
+    }
+    @EventHandler
+    public void onInventoryClickEvent(InventoryClickEvent event) {
+        Inventory inv = event.getClickedInventory();
+        if (inv == null) {
+            return;
+        }
+        String name = Objects.requireNonNull(inv).getType().name();
+        if (Objects.equals(name, plugin.getConfig().getString("guiname"))) {
+            event.setCancelled(true);
+        }
     }
 }
