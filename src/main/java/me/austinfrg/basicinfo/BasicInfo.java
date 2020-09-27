@@ -10,7 +10,7 @@ public class BasicInfo extends JavaPlugin implements Listener {
 
     public void onEnable() {
         this.saveDefaultConfig();
-        Objects.requireNonNull(this.getCommand("info")).setExecutor(new InfoGUICommand(this));
+        Objects.requireNonNull(this.getCommand("info")).setExecutor(new InfoCommand(this));
         Objects.requireNonNull(this.getCommand("appeal")).setExecutor(new AppealCommand(this));
         Objects.requireNonNull(this.getCommand("website")).setExecutor(new WebsiteCommand(this));
         Objects.requireNonNull(this.getCommand("forums")).setExecutor(new ForumsCommand(this));
