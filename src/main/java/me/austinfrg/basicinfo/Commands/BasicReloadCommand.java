@@ -19,7 +19,6 @@ public class BasicReloadCommand implements CommandExecutor {
     public static String getVersion() {
         return Bukkit.getVersion().split("\\(MC: ")[1].split("\\)")[0];
     }
-
     public static int getMinorVersion() {
         return Integer.parseInt(getVersion().split("\\.")[1]);
     }
@@ -32,82 +31,47 @@ public class BasicReloadCommand implements CommandExecutor {
                 sender.sendMessage(ChatColor.RED + "You don't have permission to run this command.");
                 return false;
             }
-            if (getMinorVersion() == 7) {
-                plugin.saveDefaultConfig();
-                plugin.reloadConfig();
-                player.playSound(player.getLocation(), Sound.valueOf("NOTE_PLING"), 1f, 1f);
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo config file reloaded successfully!"));
-                return true;
-            }
-            if (getMinorVersion() == 8) {
-                plugin.saveDefaultConfig();
-                plugin.reloadConfig();
-                player.playSound(player.getLocation(), Sound.valueOf("NOTE_PLING"), 1f, 1f);
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo config file reloaded successfully!"));
-                return true;
-            }
-            if (getMinorVersion() == 9) {
-                plugin.saveDefaultConfig();
-                plugin.reloadConfig();
-                player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_PLING"), 1f, 1f);
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo config file reloaded successfully!"));
-                return true;
-            }
-            if (getMinorVersion() == 10) {
-                plugin.saveDefaultConfig();
-                plugin.reloadConfig();
-                player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_PLING"), 1f, 1f);
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo config file reloaded successfully!"));
-                return true;
-            }
-            if (getMinorVersion() == 11) {
-                plugin.saveDefaultConfig();
-                plugin.reloadConfig();
-                player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_PLING"), 1f, 1f);
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo config file reloaded successfully!"));
-                return true;
-            }
-            if (getMinorVersion() == 12) {
-                plugin.saveDefaultConfig();
-                plugin.reloadConfig();
-                player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_PLING"), 1f, 1f);
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo config file reloaded successfully!"));
-                return true;
-            }
-            if (getMinorVersion() == 13) {
-                plugin.saveDefaultConfig();
-                plugin.reloadConfig();
-                player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_BLOCK_PLING"), 1f, 1f);
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo config file reloaded successfully!"));
-                return true;
-            }
-            if (getMinorVersion() == 14) {
-                plugin.saveDefaultConfig();
-                plugin.reloadConfig();
-                player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_BLOCK_PLING"), 1f, 1f);
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo config file reloaded successfully!"));
-                return true;
-            }
-            if (getMinorVersion() == 15) {
-                plugin.saveDefaultConfig();
-                plugin.reloadConfig();
-                player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_BLOCK_PLING"), 1f, 1f);
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo config file reloaded successfully!"));
-                return true;
-            }
-            if (getMinorVersion() == 16) {
-                plugin.saveDefaultConfig();
-                plugin.reloadConfig();
-                player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_BLOCK_PLING"), 1f, 1f);
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo config file reloaded successfully!"));
-                return true;
-            }
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo is not currently compatible with your server version, please contact the plugin developer (AustinFRG) if you are using a version 1.7-1.16 and you see this message."));
-            return true;
+            soundEffects(player);
         }
         plugin.saveDefaultConfig();
         plugin.reloadConfig();
         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo config file reloaded successfully!"));
         return true;
+    }
+
+    public void soundEffects(Player player) {
+        if (getMinorVersion() == 7) {
+            player.playSound(player.getLocation(), Sound.valueOf("NOTE_PLING"), 1f, 1f);
+        }
+        if (getMinorVersion() == 8) {
+            player.playSound(player.getLocation(), Sound.valueOf("NOTE_PLING"), 1f, 1f);
+        }
+        if (getMinorVersion() == 9) {
+            player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_PLING"), 1f, 1f);
+        }
+        if (getMinorVersion() == 10) {
+            player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_PLING"), 1f, 1f);
+        }
+        if (getMinorVersion() == 11) {
+            player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_PLING"), 1f, 1f);
+        }
+        if (getMinorVersion() == 12) {
+            player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_PLING"), 1f, 1f);
+        }
+        if (getMinorVersion() == 13) {
+            player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_BLOCK_PLING"), 1f, 1f);
+        }
+        if (getMinorVersion() == 14) {
+            player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_BLOCK_PLING"), 1f, 1f);
+        }
+        if (getMinorVersion() == 15) {
+            player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_BLOCK_PLING"), 1f, 1f);
+        }
+        if (getMinorVersion() == 16) {
+            player.playSound(player.getLocation(), Sound.valueOf("BLOCK_NOTE_BLOCK_PLING"), 1f, 1f);
+        }
+        else {
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBasicInfo is not currently compatible with your server version, please contact the plugin developer (AustinFRG) if you are using a version 1.7-1.16 and you see this message."));
+        }
     }
 }

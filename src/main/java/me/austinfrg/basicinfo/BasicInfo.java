@@ -8,6 +8,8 @@ import java.util.Objects;
 
 public class BasicInfo extends JavaPlugin implements Listener {
 
+    private BasicInfo basicinfo;
+
     public void onEnable() {
         this.saveDefaultConfig();
         Objects.requireNonNull(this.getCommand("info")).setExecutor(new InfoCommand(this));
