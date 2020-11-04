@@ -3,6 +3,7 @@ version: ${project.version}
 main: me.austinfrg.basicinfo.BasicInfo
 api-version: 1.15
 authors: [AustinFRG]
+softdepend: [PlaceholderAPI]
 description: A basic plugin that gives your players all the information they need.
 commands:
   info:
