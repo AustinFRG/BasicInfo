@@ -1,6 +1,7 @@
 package me.austinfrg.basicinfo;
 
 import me.austinfrg.basicinfo.Commands.*;
+import me.austinfrg.basicinfo.Storage.Sounds;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -8,7 +9,7 @@ import java.util.Objects;
 
 public class BasicInfo extends JavaPlugin implements Listener {
 
-    private BasicInfo basicinfo;
+    public static Sounds plugin;
 
     public void onEnable() {
         this.saveDefaultConfig();
