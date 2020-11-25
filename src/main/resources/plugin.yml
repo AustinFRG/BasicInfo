@@ -8,26 +8,19 @@ description: A basic plugin that gives your players all the information they nee
 commands:
   info:
     description: Sends all server links.
-    aliases: [serverinfo]
   website:
     description: Sends the server website link.
-    aliases: [site]
   forums:
     description: Sends the server forums link.
-    aliases: [forum]
   discord:
     description: Sends the server Discord invite link.
   store:
     description: Sends the server store link.
-    aliases: [donate]
   apply:
     description: Sends the server staff application link.
-    aliases: [applications]
   appeal:
     description: Sends the server punishment appeal link.
   basicinfo:
     description: Sends a list of the commands with BasicInfo.
-    aliases: [bi]
   basicreload:
     description: Reloads the BasicInfo config file.
-    aliases: [br]

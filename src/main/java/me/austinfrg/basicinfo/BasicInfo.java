@@ -1,10 +1,14 @@
 package me.austinfrg.basicinfo;
 
 import me.austinfrg.basicinfo.Commands.*;
+import me.austinfrg.basicinfo.Storage.Other;
 import me.austinfrg.basicinfo.Storage.Placeholders;
 import me.austinfrg.basicinfo.Storage.Sounds;
 import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
@@ -14,7 +18,7 @@ public class BasicInfo extends JavaPlugin implements Listener {
     public static Sounds plugin;
 
     public void onEnable() {
-        if(Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null){
+        if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null){
             new Placeholders(this).register();
         }
         this.saveDefaultConfig();
@@ -34,5 +38,12 @@ public class BasicInfo extends JavaPlugin implements Listener {
     }
 
     public void onDisable() {
+    }
+
+    @EventHandler
+    public void onPlayerCommand(PlayerCommandPreprocessEvent e) {
+        String message = e.getMessage();
+        Player player = e.getPlayer();
+        Other.setupAliases(message, player, e);
     }
 }

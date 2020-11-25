@@ -10,7 +10,6 @@ storelink: "http://store.hypermcn.com/"
 applicationlink: "http://site.hypermcn.com/forum/view/6-helper-application/"
 appeallink: "http://site.hypermcn.com/forum/view/11-punishment-appeals/"
 
-
 # The message for the "/basicinfo" command
 helpcommand:
   - "&9+--------------&b BasicInfo &9--------------+\n"
@@ -23,3 +22,25 @@ helpcommand:
   - "&2/apply -&a Links you to the server's staff applications.\n"
   - "&2/appeal -&a Links you to the server's punishment appeals.\n"
   - "&9+-------------------------------------+"
+
+# Command aliases
+infoaliases:
+  - "serverinfo"
+websitealiases:
+  - "site"
+forumsaliases:
+  - "forum"
+discordaliases:
+  - "support"
+storealiases:
+  - "donate"
+  - "buy"
+applicationaliases:
+  - "applications"
+  - "application"
+appealaliases:
+  - "appeals"
+basicinfoaliases:
+  - "bi"
+basicreloadaliases:
+  - "br"
