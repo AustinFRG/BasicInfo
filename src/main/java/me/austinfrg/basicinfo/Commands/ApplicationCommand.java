@@ -25,7 +25,7 @@ public class ApplicationCommand implements CommandExecutor {
             soundEffects(player);
         }
         String prefix = Objects.requireNonNull(plugin.getConfig().getString("prefix"));
-        String link = Objects.requireNonNull(plugin.getConfig().getString("applicationlink"));
+        String link = Objects.requireNonNull(plugin.getConfig().getString("applicationLink"));
         Messages.sendMSG(sender, prefix + link);
         return true;
     }

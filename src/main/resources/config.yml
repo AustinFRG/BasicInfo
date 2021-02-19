@@ -3,15 +3,15 @@ prefix: "&7[&9BasicInfo&7] "
 
 
 # Server links
-websitelink: "http://site.hypermcn.com/"
-forumslink: "http://site.hypermcn.com/forum/"
-discordlink: "https://discord.gg/qdRAXEV"
-storelink: "http://store.hypermcn.com/"
-applicationlink: "http://site.hypermcn.com/forum/view/6-helper-application/"
-appeallink: "http://site.hypermcn.com/forum/view/11-punishment-appeals/"
+websiteLink: "http://site.hypermcn.com/"
+forumsLink: "http://site.hypermcn.com/forum/"
+discordLink: "https://discord.gg/qdRAXEV"
+storeLink: "http://store.hypermcn.com/"
+applicationLink: "http://site.hypermcn.com/forum/view/6-helper-application/"
+appealLink: "http://site.hypermcn.com/forum/view/11-punishment-appeals/"
 
 # The message for the "/basicinfo" command
-helpcommand:
+helpCommand:
   - "&9+--------------&b BasicInfo &9--------------+\n"
   - "&2/basicinfo -&a Sends this message.\n"
   - "&2/basicreload -&a Reloads the BasicInfo config.\n"
@@ -24,23 +24,23 @@ helpcommand:
   - "&9+-------------------------------------+"
 
 # Command aliases
-infoaliases:
+infoAliases:
   - "serverinfo"
-websitealiases:
+websiteAliases:
   - "site"
-forumsaliases:
+forumsAliases:
   - "forum"
-discordaliases:
+discordAliases:
   - "support"
-storealiases:
+storeAliases:
   - "donate"
   - "buy"
-applicationaliases:
+applicationAliases:
   - "applications"
   - "application"
-appealaliases:
+appealAliases:
   - "appeals"
-basicinfoaliases:
+basicInfoAliases:
   - "bi"
-basicreloadaliases:
+basicReloadAliases:
   - "br"

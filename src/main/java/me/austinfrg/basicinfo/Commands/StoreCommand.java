@@ -25,7 +25,7 @@ public class StoreCommand implements CommandExecutor {
             soundEffects(player);
         }
         String prefix = Objects.requireNonNull(plugin.getConfig().getString("prefix"));
-        String link = Objects.requireNonNull(plugin.getConfig().getString("storelink"));
+        String link = Objects.requireNonNull(plugin.getConfig().getString("storeLink"));
         Messages.sendMSG(sender, prefix + link);
         return true;
     }

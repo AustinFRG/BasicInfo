@@ -25,7 +25,7 @@ public class DiscordCommand implements CommandExecutor {
             soundEffects(player);
         }
         String prefix = Objects.requireNonNull(plugin.getConfig().getString("prefix"));
-        String link = Objects.requireNonNull(plugin.getConfig().getString("discordlink"));
+        String link = Objects.requireNonNull(plugin.getConfig().getString("discordLink"));
         Messages.sendMSG(sender, prefix + link);
         return true;
     }

@@ -26,7 +26,7 @@ public class BasicInfoCommand implements CommandExecutor {
             }
             soundEffects(player);
         }
-        for(String entry : plugin.getConfig().getStringList("helpcommand")) {
+        for(String entry : plugin.getConfig().getStringList("helpCommand")) {
             Messages.sendMSG(sender, entry);
         }
         return true;

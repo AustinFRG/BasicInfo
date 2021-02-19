@@ -46,42 +46,42 @@ public class Placeholders extends PlaceholderExpansion {
 
         // %basicinfo_all%
         if(identifier.equals("all")) {
-            return plugin.getConfig().getString("websitelink", "N/A") + "\n" +
-                    plugin.getConfig().getString("discordlink", "N/A") + "\n" +
-                    plugin.getConfig().getString("storelink", "N/A") + "\n" +
-                    plugin.getConfig().getString("forumslink", "N/A") + "\n" +
-                    plugin.getConfig().getString("appeallink", "N/A") + "\n" +
-                    plugin.getConfig().getString("applicationlink", "N/A");
+            return plugin.getConfig().getString("websiteLink", "N/A") + "\n" +
+                    plugin.getConfig().getString("discordLink", "N/A") + "\n" +
+                    plugin.getConfig().getString("storeLink", "N/A") + "\n" +
+                    plugin.getConfig().getString("forumsLink", "N/A") + "\n" +
+                    plugin.getConfig().getString("appealLink", "N/A") + "\n" +
+                    plugin.getConfig().getString("applicationLink", "N/A");
         }
 
         // %basicinfo_appeal%
         if(identifier.equals("appeal")) {
-            return plugin.getConfig().getString("appeallink", "N/A");
+            return plugin.getConfig().getString("appealLink", "N/A");
         }
 
         // %basicinfo_application%
         if(identifier.equals("application")) {
-            return plugin.getConfig().getString("applicationlink", "N/A");
+            return plugin.getConfig().getString("applicationLink", "N/A");
         }
 
         // %basicinfo_discord%
         if(identifier.equals("discord")) {
-            return plugin.getConfig().getString("discordlink", "N/A");
+            return plugin.getConfig().getString("discordLink", "N/A");
         }
 
         // %basicinfo_forums%
         if(identifier.equals("forums")) {
-            return plugin.getConfig().getString("forumslink", "N/A");
+            return plugin.getConfig().getString("forumsLink", "N/A");
         }
 
         // %basicinfo_store%
         if(identifier.equals("store")) {
-            return plugin.getConfig().getString("storelink", "N/A");
+            return plugin.getConfig().getString("storeLink", "N/A");
         }
 
         // %basicinfo_website%
         if(identifier.equals("website")) {
-            return plugin.getConfig().getString("websitelink", "N/A");
+            return plugin.getConfig().getString("websiteLink", "N/A");
         }
 
         return null;

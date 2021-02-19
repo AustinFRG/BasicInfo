@@ -25,7 +25,7 @@ public class ForumsCommand implements CommandExecutor {
             soundEffects(player);
         }
         String prefix = Objects.requireNonNull(plugin.getConfig().getString("prefix"));
-        String link = Objects.requireNonNull(plugin.getConfig().getString("forumslink"));
+        String link = Objects.requireNonNull(plugin.getConfig().getString("forumsLink"));
         Messages.sendMSG(sender, prefix + link);
         return true;
     }

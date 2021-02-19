@@ -26,12 +26,12 @@ public class InfoCommand implements CommandExecutor, Listener {
             soundEffects(player);
         }
         String prefix = Objects.requireNonNull(plugin.getConfig().getString("prefix"));
-        String link1 = Objects.requireNonNull(plugin.getConfig().getString("websitelink"));
-        String link2 = Objects.requireNonNull(plugin.getConfig().getString("forumslink"));
-        String link3 = Objects.requireNonNull(plugin.getConfig().getString("discordlink"));
-        String link4 = Objects.requireNonNull(plugin.getConfig().getString("storelink"));
-        String link5 = Objects.requireNonNull(plugin.getConfig().getString("applicationlink"));
-        String link6 = Objects.requireNonNull(plugin.getConfig().getString("appeallink"));
+        String link1 = Objects.requireNonNull(plugin.getConfig().getString("websiteLink"));
+        String link2 = Objects.requireNonNull(plugin.getConfig().getString("forumsLink"));
+        String link3 = Objects.requireNonNull(plugin.getConfig().getString("discordLink"));
+        String link4 = Objects.requireNonNull(plugin.getConfig().getString("storeLink"));
+        String link5 = Objects.requireNonNull(plugin.getConfig().getString("applicationLink"));
+        String link6 = Objects.requireNonNull(plugin.getConfig().getString("appealLink"));
         Messages.sendMSG(sender, prefix + link1);
         Messages.sendMSG(sender, prefix + link2);
         Messages.sendMSG(sender, prefix + link3);

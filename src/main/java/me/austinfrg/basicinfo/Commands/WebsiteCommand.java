@@ -25,7 +25,7 @@ public class WebsiteCommand implements CommandExecutor {
             soundEffects(player);
         }
         String prefix = Objects.requireNonNull(plugin.getConfig().getString("prefix"));
-        String link = Objects.requireNonNull(plugin.getConfig().getString("websitelink"));
+        String link = Objects.requireNonNull(plugin.getConfig().getString("websiteLink"));
         Messages.sendMSG(sender, prefix + link);
         return true;
     }

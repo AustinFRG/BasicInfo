@@ -25,7 +25,7 @@ public class AppealCommand implements CommandExecutor {
             soundEffects(player);
         }
         String prefix = Objects.requireNonNull(plugin.getConfig().getString("prefix"));
-        String link = Objects.requireNonNull(plugin.getConfig().getString("appeallink"));
+        String link = Objects.requireNonNull(plugin.getConfig().getString("appealLink"));
         Messages.sendMSG(sender, prefix + link);
         return true;
     }
