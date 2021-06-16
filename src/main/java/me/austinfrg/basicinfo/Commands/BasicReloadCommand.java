@@ -1,6 +1,6 @@
 package me.austinfrg.basicinfo.Commands;
 
-import me.austinfrg.basicinfo.Storage.Messages;
+import me.austinfrg.basicinfo.Utils.Messages;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -8,7 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import static me.austinfrg.basicinfo.Storage.Sounds.soundEffects;
+import static me.austinfrg.basicinfo.Utils.Sounds.soundEffects;
 
 public class BasicReloadCommand implements CommandExecutor {
     private final JavaPlugin plugin;

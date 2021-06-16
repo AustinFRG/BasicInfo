@@ -1,8 +1,8 @@
 package me.austinfrg.basicinfo;
 
 import me.austinfrg.basicinfo.Commands.*;
-import me.austinfrg.basicinfo.Storage.Placeholders;
-import me.austinfrg.basicinfo.Storage.Sounds;
+import me.austinfrg.basicinfo.Utils.Placeholders;
+import me.austinfrg.basicinfo.Utils.Sounds;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

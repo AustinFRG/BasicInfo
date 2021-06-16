@@ -1,4 +1,4 @@
-package me.austinfrg.basicinfo.Storage;
+package me.austinfrg.basicinfo.Utils;
 
 import me.austinfrg.basicinfo.BasicInfo;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;

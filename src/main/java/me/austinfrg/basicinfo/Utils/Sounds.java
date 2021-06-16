@@ -1,4 +1,4 @@
-package me.austinfrg.basicinfo.Storage;
+package me.austinfrg.basicinfo.Utils;
 
 import com.cryptomorin.xseries.XSound;
 import me.austinfrg.basicinfo.BasicInfo;

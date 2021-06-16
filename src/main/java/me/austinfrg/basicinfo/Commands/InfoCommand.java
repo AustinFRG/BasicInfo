@@ -1,6 +1,6 @@
 package me.austinfrg.basicinfo.Commands;
 
-import me.austinfrg.basicinfo.Storage.Messages;
+import me.austinfrg.basicinfo.Utils.Messages;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -10,7 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
 
-import static me.austinfrg.basicinfo.Storage.Sounds.soundEffects;
+import static me.austinfrg.basicinfo.Utils.Sounds.soundEffects;
 
 public class InfoCommand implements CommandExecutor, Listener {
     private final JavaPlugin plugin;
