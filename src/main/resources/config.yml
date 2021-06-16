@@ -1,6 +1,8 @@
 # Prefix (Goes before all links)
 prefix: "&7[&9BasicInfo&7] "
 
+# The sound played when using commands
+commandSound: "BLOCK_NOTE_BLOCK_PLING"
 
 # Server links
 websiteLink: "http://site.hypermcn.com/"
